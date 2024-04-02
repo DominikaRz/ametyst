@@ -1,0 +1,42 @@
+/*----SECTION-----*/
+section h2{text-align: center; margin-bottom: 1em;}
+.uk-card-title{font-size: 1.1em; margin: 0;}
+.uk-card-body{padding: 15px;}
+.uk-grid{margin-right: 0;}
+section a:hover{ text-decoration: none;}
+section a:hover p{ color: black; font-weight: bold;}
+section a:link p, section a:active p{ color: black;}
+section a:visited p{ color: #361251;}
+section p{ margin: 0.1rem;}
+section td .uk-input{width: 5vw; padding: 0 12px 0 0;}
+
+.uk-table th{text-align: left;}
+.uk-table tbody tr:hover{background-color: #bc94d31e;}
+.uk-flex-right{justify-content: flex-end;}
+hr{border-top: 1px solid #4242467a;}
+
+.radioch{
+  font-size: 1.2rem;
+  line-height: 1.4; 
+  color: #361251;
+  padding-top: 0.9rem;
+}
+
+td a, td a:link, td a:active, td a:visited,
+p a, p a:link, p a:active, p a:visited{ color: #361251;}
+td a:hover, p a:hover{ color: #6b26a0;}
+
+.disabledH{ color: silver;}
+.disabledP{ color: grey;}
+
+@media (max-width: 640px) { 
+  
+  .uk-table-responsive, 
+  .uk-table-responsive tbody, 
+  .uk-table-responsive th, 
+  .uk-table-responsive td, 
+  .uk-table-responsive tr { display: inline-block; } 
+
+  .uk-table-responsive thead { display: none; } 
+  section td .uk-input{ width: 17vw;}
+} 

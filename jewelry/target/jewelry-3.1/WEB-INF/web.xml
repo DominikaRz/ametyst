@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                               http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>jdbcURL</param-name>
+        <param-value>jdbc:mysql://localhost:3306/sj4?allowMultiQueries=true</param-value>
+    </context-param>
+    <!--    historyAll        (na potzreby funkcjonowania historii w pliku ControlSrv.java)     -->
+    <context-param> <param-name>jdbcUsername</param-name> <param-value>historyAll</param-value> </context-param>
+    <context-param> <param-name>jdbcPassword</param-name> <param-value>vgy7^TFC5rdx</param-value> </context-param>
+    <!--    administrator   (dla administratora)   -->
+    <context-param> <param-name>jdbcAdmin</param-name> <param-value>administrator</param-value> </context-param> 
+    <context-param> <param-name>jdbcAdminPassw</param-name> <param-value>vfr4#EDCxsw2</param-value> </context-param>
+    <!--    worker      (dla pracownika)      -->
+    <context-param> <param-name>jdbcWorker</param-name> <param-value>worker</param-value> </context-param> 
+    <context-param> <param-name>jdbcWorkerPassw</param-name> <param-value>mko0(IJNbhu8</param-value> </context-param>
+    <!--    corrector       (dla korektora)        -->
+    <context-param> <param-name>jdbcCorrector</param-name> <param-value>corrector</param-value> </context-param>
+    <context-param> <param-name>jdbcCorrectorPassw</param-name> <param-value>nhy6%TGBvfr4</param-value> </context-param>
+    <!--    supplier        (dla zaopatrzeniowca)      -->
+    <context-param> <param-name>jdbcSupplier</param-name> <param-value>supplier</param-value> </context-param>
+    <context-param> <param-name>jdbcSupplierPassw</param-name> <param-value>cde3@WSXzaq1</param-value> </context-param>
+    <!--    user      (dla użytkownika zalogowanego =  wyświetlanie zamówień i edycja ustawień konta)      -->
+    <context-param> <param-name>jdbcUser</param-name> <param-value>user</param-value> </context-param>
+    <context-param> <param-name>jdbcUserPassw</param-name> <param-value>zse4%RDXcft6</param-value> </context-param>
+    <!--    userNL      (dla użytkownika niezalogowanego =  poruszanie się po aplikacji i wykonywanie zamówień)      -->
+    <context-param> <param-name>jdbcUserNL</param-name> <param-value>userNL</param-value> </context-param>
+    <context-param> <param-name>jdbcUserNLPassw</param-name> <param-value>zaq1@WSXcde3</param-value> </context-param>
+    <!--    login      (do logowania użytkowników)      -->
+    <context-param> <param-name>jdbcLogin</param-name> <param-value>login</param-value> </context-param>
+    <context-param> <param-name>jdbcLoginPassw</param-name> <param-value>vgy7*UHBnji9</param-value> </context-param>
+    <!--    products        (dla wyświetlania produktów)    -->
+    <context-param> <param-name>jdbcProducts</param-name> <param-value>products</param-value> </context-param>
+    <context-param> <param-name>jdbcProductsPassw</param-name> <param-value>xdr5^TFCvgy7</param-value> </context-param>
+    <!--    menu        (dla wyświetlania menu w aside)    -->
+    <context-param> <param-name>jdbcMenu</param-name> <param-value>menu</param-value> </context-param>
+    <context-param> <param-name>jdbcMenuPassw</param-name> <param-value>xsw2#EDCvfr4</param-value> </context-param>
+    <!--    history        (dla dodawania historii)    -->
+    <context-param> <param-name>jdbcHistory</param-name> <param-value>history</param-value> </context-param>
+    <context-param> <param-name>jdbcHistoryPassw</param-name> <param-value>bhu8(IJNmko0</param-value> </context-param>
+    <!--    dictSelect        (dla wyświetlania tabel słownikowych)    -->
+    <context-param> <param-name>jdbcDictSelect</param-name> <param-value>dictSelect</param-value> </context-param>
+    <context-param> <param-name>jdbcDictSelectPassw</param-name> <param-value>mju7^YHNbgt5</param-value> </context-param>
+    <!--    dictUpdate        (dla modyfikacji tabel słownikowych)    -->
+    <context-param> <param-name>jdbcDictUpdate</param-name> <param-value>dictUpdate</param-value> </context-param>
+    <context-param> <param-name>jdbcDictUpdatePassw</param-name> <param-value>,ki87UJMNhy6</param-value> </context-param>
+    <!--    dictInsert        (dla dodawania do tabel słownikowych)    -->
+    <context-param> <param-name>jdbcDictInsert</param-name> <param-value>dictInsert</param-value> </context-param>
+    <context-param> <param-name>jdbcDictInsertPassw</param-name> <param-value>bgt5$RFVcde3</param-value> </context-param>
+    <!--    dictDelete        (dla usuwania z tabel słownikowych)    -->
+    <context-param> <param-name>jdbcDictDelete</param-name> <param-value>dictDelete</param-value> </context-param>
+    <context-param> <param-name>jdbcDictDeletePassw</param-name> <param-value>nji9)OKM,lp-</param-value> </context-param>
+    
+    <servlet>
+        <servlet-name>ControllerSrv</servlet-name>
+        <servlet-class>jwl.jewelry.ControllerSrv</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlFiles</servlet-name>
+        <servlet-class>jwl.jewelry.ControlFiles</servlet-class>
+        <multipart-config/>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlBasket</servlet-name>
+        <servlet-class>jwl.jewelry.ControlBasket</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlProducts</servlet-name>
+        <servlet-class>jwl.jewelry.ControlProducts</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlUser</servlet-name>
+        <servlet-class>jwl.jewelry.ControlUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlLogin</servlet-name>
+        <servlet-class>jwl.jewelry.ControlLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlUserRank</servlet-name>
+        <servlet-class>jwl.jewelry.ControlUserRank</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>img/CT/*/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.svg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.woff2</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.woff</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.ttf</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.eot</url-pattern>
+    </servlet-mapping>
+    <!--HANDLING ERRORS       500 - Internal Server Error,  404 - Not Found
+    <error-page>
+        <error-code>404</error-code>
+        <location>/AppExceptionHandler</location>
+    </error-page>
+    <error-page>
+        <exception-type>javax.servlet.ServletException</exception-type>
+        <location>/AppExceptionHandler</location>
+    </error-page>-->
+    <session-config>
+        <session-timeout>
+            -1
+        </session-timeout>
+    </session-config>
+</web-app>

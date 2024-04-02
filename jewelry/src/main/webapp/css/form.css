@@ -1,0 +1,133 @@
+/*section form{ width: 50vw; display: inline-block;}*/
+
+section label.error {
+    color: red;
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
+section input{ background-color: #e3dcdd;}
+
+section input.error {
+    border: 1px solid #9702028c;
+    background: #80000009;
+    font-weight: 300;
+    color: #bb0404;
+}
+section input.error:focus {
+    border: 1px solid #361251;
+    font-weight: 300;
+    color: black;
+}
+
+section input.valid.success-alert {
+    border: 1px solid #4ec452;
+    background: #00800009;
+    color: #008000;
+}
+
+section input:-webkit-autofill,
+section input:-webkit-autofill:hover, 
+section input:-webkit-autofill:focus,
+section textarea:-webkit-autofill,
+section textarea:-webkit-autofill:hover,
+section textarea:-webkit-autofill:focus,
+section select:-webkit-autofill,
+section select:-webkit-autofill:hover,
+section select:-webkit-autofill:focus{
+  border: 1px solid #361251;
+  -webkit-text-fill-color: #361251;
+  -webkit-box-shadow: 0 0 0px 1000px #42008009 inset;
+  box-shadow: 0 0 0px 1000px #42008009 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+section .uk-checkbox:focus,
+section .uk-select:focus{border: 1px solid #361251;}
+section .uk-checkbox:checked:focus{
+    background: #361251;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+}
+
+section .uk-input:focus,
+section input:focus, 
+section textarea:focus, 
+section select:focus {
+    border: 1px solid #361251;
+    font-weight: 300;
+    color: black;
+}
+
+section .uk-form-icon {
+    position: absolute;
+    margin-top: 0.6em;
+    margin-left: 0.65em;
+    width: 40px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #999;
+}
+
+section uk-checkbox{ border: 1em solid black}
+
+.uk-modal label.error {
+    color: red;
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 5px;
+}
+
+.uk-modal input.error {
+    border: 1px solid #9702028c;
+    background: #80000009;
+    font-weight: 300;
+    color: #bb0404;
+}
+.uk-modal input.error:focus {
+    border: 1px solid #361251;
+    font-weight: 300;
+    color: black;
+}
+
+.uk-modal input.valid.success-alert {
+    border: 1px solid #4ec452;
+    background: #00800009;
+    color: #008000;
+}
+
+.uk-modal input:-webkit-autofill,
+.uk-modal input:-webkit-autofill:hover, 
+.uk-modal input:-webkit-autofill:focus,
+.uk-modal textarea:-webkit-autofill,
+.uk-modal textarea:-webkit-autofill:hover,
+.uk-modal textarea:-webkit-autofill:focus,
+.uk-modal select:-webkit-autofill,
+.uk-modal select:-webkit-autofill:hover,
+.uk-modal select:-webkit-autofill:focus{
+  border: 1px solid #361251;
+  -webkit-text-fill-color: #361251;
+  -webkit-box-shadow: 0 0 0px 1000px #42008009 inset;
+  box-shadow: 0 0 0px 1000px #42008009 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.uk-modal .uk-checkbox:focus,
+.uk-modal .uk-select:focus{border: 1px solid #361251;}
+.uk-modal .uk-checkbox:checked:focus{
+    background: #361251;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+    background-repeat: no-repeat;
+}
+
+.uk-modal .uk-input:focus,
+.uk-modal input:focus, 
+.uk-modal textarea:focus, 
+.uk-modal select:focus {
+    border: 1px solid #361251;
+    font-weight: 300;
+    color: black;
+}
+
+
+
+.uk-modal uk-checkbox{ border: 1em solid black}

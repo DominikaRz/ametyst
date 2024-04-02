@@ -1,0 +1,583 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Półfabrykanty i projekty">
+    <meta name="keywords" content="sklep, półfabrykanty, biżuteria, projekty, elementy metalowe, minerały">
+    <meta name="author" content="Dominika Rzepka">
+    <!--<meta name="" content=""/>-->
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+<!--CSS-->
+    <link rel="stylesheet" href="css/uikit.css"/>
+    <link rel="stylesheet" href="css/uikit-rtl.css"/>
+    <link rel="stylesheet" href="css/styl.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+<!--JS-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <script src="js/responsive.js"></script>
+
+<!--ICONS-->
+<!--COLORS: https://imagecolorpicker.com/  LaSante, Oleśnica 2013 rok 51.21186984176322, 17.39700984259854-->
+
+<!--FONTS-->
+    <link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Caveat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Combo' rel='stylesheet'>
+
+<!--TITLE-->    
+    <title>Ametyst</title>
+  </head>
+  <body>
+  
+  
+  <!--HEADER-->
+    <header>
+      <h1 class="uk-text">Ametyst</h1>
+      <p>Półfabrykanty i projekty</p>
+    </header>
+    <!--SIDENAV -->
+    <nav class="uk-navbar-container" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky" uk-navbar>
+      <div class="uk-navbar-center"><div> <!--Additional div to display in IE 11-->
+          <ul class="uk-navbar-nav"> 
+            <li class="hidsm"><a href="#">NOWOŚCI</a></li><!----> 
+            <li class="hidsm"><a href="#">PROMOCJE</a></li>
+            <li class="hidsm"><a href="#">AKTUALNOŚCI</a></li> 
+            <li><a class="uk-navbar-item uk-logo" href="index.html">
+                <img id="logo" src="img/logo.svg" alt="logo" width="45"/></a>
+            </li><!----> 
+            <li class="hidsm"><a href="#modal-choose" uk-toggle>PROJEKTUJ</a></li>
+            <li class="uk-parent">
+                <a href="koszyk.html" uk-icon="icon: cart"></a><!--KOSZYK-->
+                <div id="cart" uk-dropdown> <!-- uk-height-medium uk-overflow-auto--> 
+                    <div><h4 class="uk-card-footer">Suma: 8,25 zł</h4></div>
+                    <div id="div1" class="uk-dropdown-grid"> 
+                        <div class="uk-child-width-1-5" uk-grid>
+                            <div class="uk-justify-right">
+                                <a href="#" class="item-rm" uk-icon="icon: close" onclick="del(div1);"></a>
+                                <img class="item-img" src="img/ametyst.jpg" alt="ametyst">
+                            </div>
+                            <div class="item-text uk-width-3-5">
+                                <p>Kwarc ametystowy oponka fasetowana 11 mm 1</p>
+                            </div>
+                            <div><p class="item-price uk-text-nowrap uk-text-right uk-text-bold"> 1 * 1,65 zł</p></div>
+                        </div>
+                    </div>
+                    <div id="div2" class="uk-dropdown-grid"> 
+                        <div class="uk-child-width-1-5" uk-grid>
+                            <div class="uk-justify-right">
+                                <a href="#" class="item-rm" uk-icon="icon: close" onclick="del(div2);"></a>
+                                <img class="item-img" src="img/ametyst.jpg" alt="ametyst">
+                            </div>
+                            <div class="item-text uk-width-3-5">
+                                <p>Kwarc ametystowy oponka fasetowana 11 mm 2</p>
+                            </div>
+                            <div><p class="item-price uk-text-nowrap uk-text-right uk-text-bold"> 1 * 1,65 zł</p></div>
+                        </div>
+                    </div>
+                    <div id="div3" class="uk-dropdown-grid"> 
+                        <div class="uk-child-width-1-5" uk-grid>
+                            <div class="uk-justify-right">
+                                <a href="#" class="item-rm" uk-icon="icon: close" onclick="del(div3);"></a>
+                                <img class="item-img" src="img/ametyst.jpg" alt="ametyst">
+                            </div>
+                            <div class="item-text uk-width-3-5">
+                                <p>Kwarc ametystowy oponka fasetowana 11 mm 3</p>
+                            </div>
+                            <div><p class="item-price uk-text-nowrap uk-text-right uk-text-bold"> 1 * 1,65 zł</p></div>
+                        </div>
+                    </div>
+                    <div id="div4" class="uk-dropdown-grid"> 
+                        <div class="uk-child-width-1-5" uk-grid>
+                            <div class="uk-justify-right">
+                                <a href="#" class="item-rm" uk-icon="icon: close" onclick="del(div4);"></a>
+                                <img class="item-img" src="img/ametyst.jpg" alt="ametyst">
+                            </div>
+                            <div class="item-text uk-width-3-5">
+                                <p>Kwarc ametystowy oponka fasetowana 11 mm 4</p>
+                            </div>
+                            <div><p class="item-price uk-text-nowrap uk-text-right uk-text-bold"> 1 * 1,65 zł</p></div>
+                        </div>
+                    </div>
+                    <div id="div5" class="uk-dropdown-grid"> 
+                        <div class="uk-child-width-1-5" uk-grid>
+                            <div class="uk-justify-right">
+                                <a href="#" class="item-rm" uk-icon="icon: close" onclick="del(div5);"></a>
+                                <img class="item-img" src="img/ametyst.jpg" alt="ametyst">
+                            </div>
+                            <div class="item-text uk-width-3-5">
+                                <p>Kwarc ametystowy oponka fasetowana 11 mm 5</p>
+                            </div>
+                            <div><p class="item-price uk-text-nowrap uk-text-right uk-text-bold"> 1 * 1,65 zł</p></div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function del(div){
+                        $(div).empty();
+                    }
+                </script>
+            </li>
+            <li></li> 
+            <li class="uk-parent">
+              <a href="loguj.html" uk-icon="icon: user"></a><!--ZALOGUJ-->
+                <div class="uk-navbar-dropdown">
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li><a href="loguj.html">Zaloguj</a></li>
+                        <li><a href="rejestruj.html">Zarejestruj się</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="uk-parent">
+                <a class="uk-navbar-toggle" href="#" uk-search-icon></a> <!--SZUKAJ-->
+                <div id="sear-button" uk-dropdown>
+                    <div class="uk-dropdown-grid"> 
+                        <div class="uk-child-width-1-5" uk-grid>
+                            <div class="uk-width-4-5">
+                                <form class="uk-search uk-search-navbar uk-width-1-1">
+                                    <input class="uk-search-input" type="search" placeholder="Szukaj" autofocus>
+                                </form>
+                            </div>
+                            <div class="uk-text-center">
+                                <a class="uk-navbar-dropdown-close" href="#" uk-close></a>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="#menu" class="uk-hidden@m" uk-toggle uk-navbar-toggle-icon></a></li><!-- -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="modal-choose" uk-modal>
+        <div class="uk-modal-dialog uk-dark uk-background-muted">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title uk-text-center">Zaprojektuj własną biżuterię!</h2>
+            </div>
+            <div class="uk-modal-body">
+                <form class="uk-form-stacked">
+                    <div class="uk-margin">
+                        <div class="uk-form-label"><h4>Wybierz co chcesz zaprojektować:</h4> </div>
+                        <div class="uk-form-controls">
+                            <label><input class="uk-radio" type="radio" name="radio1"> Naszyjnik</label><br>
+                            <label><input class="uk-radio uk-active" type="radio" name="radio1"> Bransoletka</label><br>
+                            <label><input class="uk-radio" type="radio" name="radio1"> Kolczyki</label><br/>
+                            <label><input class="uk-radio" type="radio" name="radio1"> Broszka</label>
+                        </div>
+                    </div>
+                
+                </form>
+            </div>
+            <div class="uk-modal-footer uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                <a href="#" class="uk-button uk-button-primary" uk-toggle>Next</a>
+            </div>
+        </div>
+    </div>
+
+  <!--MAIN-->
+    <main>      
+      <div class="uk-margin" uk-grid>
+       <!--NAVIGATION-->
+        <aside class="uk-width-1-5@m">
+          <div id="menu" uk-offcanvas > <!---->
+           <div class="menu-bar uk-offcanvas-bar">
+              <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <a href="#" class="uk-nav-header"><h4>MINERAŁY</h4></a>
+                <li class="uk-parent">
+                    <a href="#" class="uk-nav-header">NATURALNE MINERAŁY</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Agat</a></li>
+                        <li><a href="#">Akwamaryn</a></li>
+                        <li><a href="#">Amazonit</a></li>
+                        <li><a href="#">Ametryn</a></li>
+                        <li><a href="ametyst.html">Ametyst</a></li>
+                        <li><a href="#">Amonit</a></li>
+                        <li><a href="#">Angelit</a></li>
+                        <li><a href="#">Apatyt</a></li>
+                        <li><a href="#">Awenturyn</a></li>
+                        <li><a href="#">Bronzyt</a></li>
+                        <li><a href="#">Chalcedon</a></li>
+                        <li><a href="#">Chalkopiryt</a></li>
+                        <li><a href="#">Chryzokola</a></li>
+                        <li><a href="#">Chryzopraz</a></li>
+                        <li><a href="#">Cyrkon</a></li>
+                        <li><a href="#">Cytryn</a></li>
+                        <li><a href="#">Czaroit</a></li>
+                        <li><a href="#">Diament</a></li>
+                        <li><a href="#">Diopsyd</a></li>
+                        <li><a href="#">Dumortieryt</a></li>
+                        <li><a href="#">Fluoryt</a></li>
+                        <li><a href="#">Granat</a></li>
+                        <li><a href="#">Hematyt</a></li>
+                        <li><a href="#">Herkimeryt</a></li>
+                        <li><a href="#">Hemimorfit</a></li>
+                        <li><a href="#">Howlit</a></li>
+                        <li><a href="#">Iolit</a></li>
+                        <li><a href="#">Jadeit</a></li>
+                        <li><a href="#">Jaspis</a></li>
+                        <li><a href="#">Kamień księżycowy</a></li>
+                        <li><a href="#">Kamień słoneczny</a></li>
+                        <li><a href="#">Karneol</a></li>
+                        <li><a href="#">Kryształ górski</a></li>
+                        <li><a href="#">Krzemień pasiasty</a></li>
+                        <li><a href="#">Kunzyt</a></li>
+                        <li><a href="#">Kwarc barwiony</a></li>
+                        <li><a href="#">Kwarc dymny</a></li>
+                        <li><a href="#">Kwarc kawowy</a></li>
+                        <li><a href="#">Kwarc lemon</a></li>
+                        <li><a href="#">Kwarc lodowy</a></li>
+                        <li><a href="#">Kwarc mistyczny</a></li>
+                        <li><a href="#">Kwarc niebieski</a></li>
+                        <li><a href="#">Kwarc różowy</a></li>
+                        <li><a href="#">Kwarc z rutylem</a></li>
+                        <li><a href="#">Kwarc z turmalinem</a></li>
+                        <li><a href="#">Kwarc tytanowany</a></li>
+                        <li><a href="#">Kwarc szary</a></li>
+                        <li><a href="#">Kyanit</a></li>
+                        <li><a href="#">Labradoryt</a></li>
+                        <li><a href="#">Lapis lazuli</a></li>
+                        <li><a href="#">Larimar</a></li>
+                        <li><a href="#">Larvikit</a></li>
+                        <li><a href="#">Lawa wulkaniczna</a></li>
+                        <li><a href="#">Lepidolit</a></li>
+                        <li><a href="#">Malachit</a></li>
+                        <li><a href="#">Masa perłowa</a></li>
+                        <li><a href="#">Mokait</a></li>
+                        <li><a href="#">Morganit</a></li>
+                        <li><a href="#">Nefryt</a></li>
+                        <li><a href="#">Obsydian</a></li>
+                        <li><a href="#">Oliwin</a></li>
+                        <li><a href="#">Onyks</a></li>
+                        <li><a href="#">Opal</a></li>
+                        <li><a href="#">Peridot</a></li>
+                        <li><a href="#">Piryt</a></li>
+                        <li><a href="#">Prehnit</a></li>
+                        <li><a href="#">Riolit</a></li>
+                        <li><a href="#">Rodochrozyt</a></li>
+                        <li><a href="#">Rodonit</a></li>
+                        <li><a href="#">Rubelit</a></li>
+                        <li><a href="#">Rubin</a></li>
+                        <li><a href="#">Rutyl</a></li>
+                        <li><a href="#">Sardonyks</a></li>
+                        <li><a href="#">Serpentynit</a></li>
+                        <li><a href="#">Serafinit</a></li>
+                        <li><a href="#">Sodalit</a></li>
+                        <li><a href="#">Spinel</a></li>
+                        <li><a href="#">Sugilit</a></li>
+                        <li><a href="#">Szafir</a></li>
+                        <li><a href="#">Szmaragd</a></li>
+                        <li><a href="#">Tanzanit</a></li>
+                        <li><a href="#">Tektyt</a></li>
+                        <li><a href="#">Topaz</a></li>
+                        <li><a href="#">Turkus</a></li>
+                        <li><a href="#">Turmalin</a></li>
+                        <li><a href="#">Tygrysie oko</a></li>
+                        <li><a href="#">Zoisyt</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#" class="uk-nav-header">MINERAŁY SYNTETYCZNE</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Howlit syntetyczny</a></li>
+                        <li><a href="#">Kocie oko</a></li>
+                        <li><a href="#">Terahertz</a></li>
+                        <li><a href="#">Piasek pustyni</a></li>
+                        <li><a href="#">Noc Kairu</a></li>
+                        <li><a href="#">Opalit</a></li>
+                        <li><a href="#">Żywica</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#" class="uk-nav-header">PERŁY</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Hodowlane</a></li>
+                        <li><a href="#">Naturalne</a></li>
+                        <li><a href="#">Muszle</a></li>
+                        <li><a href="#">Seashell</a></li>
+                        <li><a href="#">Kaboszony</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="uk-nav-header uk-margin-small-left">KORAL</a></li>
+                <li class="uk-parent">
+                    <a href="#" class="uk-nav-header">BURSZTYN</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Kaboszony</a></li>
+                        <li><a href="#">Inkluzje</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#" class="uk-nav-header">SZKŁO</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="#">Antyczne</a></li>
+                        <li><a href="#">Czeskie</a></li>
+                    </ul>
+                </li>
+               <!-------------------------------------------------------->
+                <li class="uk-nav-divider uk-margin"></li>
+                  <a href="#" class="uk-nav-header"><h4>PÓŁFABRYKATY</h4></a>
+                    <li class="uk-parent">
+                      <a href="#" class="uk-nav-header">STAL SZLACHETNA</a>
+                      <ul class="uk-nav-sub">
+                          <li><a href="#">Bazy</a></li>
+                          <li><a href="#">Bigle</a></li>
+                          <li><a href="#">Druty</a></li>
+                          <li><a href="#">Kolczyki</a></li>
+                          <li><a href="#">Końcówki</a></li>
+                          <li><a href="#">Koraliki</a></li>
+                          <li><a href="#">Kółka</a></li>
+                          <li><a href="#">Krawatki</a></li>
+                          <li><a href="#">Kulki</a></li>
+                          <li><a href="#">Łańcuszki</a></li>
+                          <li><a href="#">Łapaczki</a></li>
+                          <li><a href="#">Przekładki</a></li>
+                          <li><a href="#">Szpiki</a></li>
+                          <li><a href="#">Sztyfty</a></li>
+                          <li><a href="#">Zapięcia</a></li>
+                          <li><a href="#">Zawieszki</a></li>
+                      </ul>
+                    </li> 
+                    <li class="uk-parent">
+                      <a href="#" class="uk-nav-header">SREBRO</a>
+                      <ul class="uk-nav-sub">
+                          <li><a href="#">Bazy</a></li>
+                          <li><a href="#">Bigle</a></li>
+                          <li><a href="#">Druty</a></li>
+                          <li><a href="#">Kolczyki</a></li>
+                          <li><a href="#">Końcówki</a></li>
+                          <li><a href="#">Koraliki</a></li>
+                          <li><a href="#">Kółka</a></li>
+                          <li><a href="#">Krawatki</a></li>
+                          <li><a href="#">Kulki</a></li>
+                          <li><a href="#">Łańcuszki</a></li>
+                          <li><a href="#">Łapaczki</a></li>
+                          <li><a href="#">Przekładki</a></li>
+                          <li><a href="#">Szpiki</a></li>
+                          <li><a href="#">Sztyfty</a></li>
+                          <li><a href="#">Zapięcia</a></li>
+                          <li><a href="#">Zawieszki</a></li>
+                      </ul>
+                    </li>  
+                    <li class="uk-parent">
+                      <a href="#" class="uk-nav-header">MIEDŹ</a>
+                      <ul class="uk-nav-sub">
+                          <li><a href="#">Bazy</a></li>
+                          <li><a href="#">Bigle</a></li>
+                          <li><a href="#">Druty</a></li>
+                          <li><a href="#">Kolczyki</a></li>
+                          <li><a href="#">Końcówki</a></li>
+                          <li><a href="#">Koraliki</a></li>
+                          <li><a href="#">Kółka</a></li>
+                          <li><a href="#">Krawatki</a></li>
+                          <li><a href="#">Kulki</a></li>
+                          <li><a href="#">Łańcuszki</a></li>
+                          <li><a href="#">Łapaczki</a></li>
+                          <li><a href="#">Przekładki</a></li>
+                          <li><a href="#">Szpiki</a></li>
+                          <li><a href="#">Sztyfty</a></li>
+                          <li><a href="#">Zapięcia</a></li>
+                          <li><a href="#">Zawieszki</a></li>
+                      </ul>
+                    </li> 
+                    <li class="uk-parent">
+                      <a href="#" class="uk-nav-header">INNE</a>
+                      <ul class="uk-nav-sub">
+                          <li><a href="#">Bazy</a></li>
+                          <li><a href="#">Bigle</a></li>
+                          <li><a href="#">Druty</a></li>
+                          <li><a href="#">Kolczyki</a></li>
+                          <li><a href="#">Końcówki</a></li>
+                          <li><a href="#">Koraliki</a></li>
+                          <li><a href="#">Kółka</a></li>
+                          <li><a href="#">Krawatki</a></li>
+                          <li><a href="#">Kulki</a></li>
+                          <li><a href="#">Łańcuszki</a></li>
+                          <li><a href="#">Łapaczki</a></li>
+                          <li><a href="#">Przekładki</a></li>
+                          <li><a href="#">Szpiki</a></li>
+                          <li><a href="#">Sztyfty</a></li>
+                          <li><a href="#">Zapięcia</a></li>
+                          <li><a href="#">Zawieszki</a></li>
+                      </ul>
+                    </li>  
+                    <li><a href="#" class="uk-nav-header uk-margin-small-left">SYLIKON</a></li>
+                    <li class="uk-parent">
+                        <a href="#" class="uk-nav-header">KRYSZTAŁKI</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Swarovski</a></li>
+                            <li><a href="#">Inne</a></li>
+                        </ul>
+                    </li>
+                    <li class="uk-parent">
+                        <a href="#" class="uk-nav-header">CERAMIKA</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Zawieszki</a></li>
+                            <li><a href="#">Przekładki</a></li>
+                        </ul>
+                    </li>                      
+                    <li class="uk-parent">
+                        <a href="#" class="uk-nav-header">DREWNO</a>
+                        <ul class="uk-nav-sub">
+                            <li><a href="#">Kokosowe</a></li>
+                            <li><a href="#">Sandałowe</a></li>
+                            <li><a href="#">Różane</a></li>
+                            <li><a href="#">Wenge</a></li>
+                            <li><a href="#">Kamforowe</a></li>
+                            <li><a href="#">Egzotyczne</a></li>
+                        </ul>
+                    </li>
+                  </li>
+               <!-------------------------------------------------------->
+                <li class="uk-nav-divider uk-margin"></li>
+                <li class="uk-parent">
+                  <a href="#" class="uk-nav-header">BIŻUTERIA</a>
+                  <ul class="uk-nav-sub">
+                      <li><a href="#">Bransoletki</a></li>
+                      <li><a href="#">Łańcuszki</a></li>
+                      <li><a href="#">Kolczyki</a></li>
+                      <li><a href="#">Broszki</a></li>
+                  </ul>
+                </li>
+               <!-------------------------------------------------------->
+                  <li class="uk-nav-divider uk-margin"></li>
+                      <a href="#" class="uk-nav-header"><h4>PASMANTERIA</h4></a>
+                      <li class="uk-parent">
+                          <a href="#" class="uk-nav-header">RZEMIENIE</a>
+                          <ul class="uk-nav-sub">
+                              <li><a href="#">Jubilerskie</a></li>
+                              <li><a href="#">Naturalne</a></li>
+                              <li><a href="#">Syntetyczne</a></li>
+                              <li><a href="#">Zamsz</a></li>
+                          </ul>
+                      </li>
+                      <li class="uk-parent">
+                          <a href="#" class="uk-nav-header">SZNURKI</a>
+                          <ul class="uk-nav-sub">
+                              <li><a href="#">Jubilerskie</a></li>
+                              <li><a href="#">Nylonowe</a></li>
+                              <li><a href="#">Odzieżowe</a></li>
+                              <li><a href="#">Woskowane</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#" class="uk-nav-header uk-margin-small-left">GUMKI</a></li>
+                      <li class="uk-parent">
+                          <a href="#" class="uk-nav-header">WSTĄŻKI</a>
+                          <ul class="uk-nav-sub">
+                              <li><a href="#">Tytanowa</a></li>
+                              <li><a href="#">Satynowa</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="#" class="uk-nav-header uk-margin-small-left">LINKI</a></li>
+                      <li><a href="#" class="uk-nav-header uk-margin-small-left">NICI</a></li>
+                      <li><a href="#" class="uk-nav-header uk-margin-small-left">CHWOSTY</a></li>
+                      <li><a href="#" class="uk-nav-header uk-margin-small-left">ŻYŁKI</a></li>
+                      <li><a href="#" class="uk-nav-header uk-margin-small-left">FRĘDZLE</a></li>
+                      <li class="uk-parent">
+                          <a href="#" class="uk-nav-header">JEDWAB</a>
+                          <ul class="uk-nav-sub">
+                              <li><a href="#">Sari</a></li>
+                              <li><a href="#">Shibori</a></li>
+                          </ul>
+                      </li>
+                      <li class="uk-parent">
+                          <a href="#" class="uk-nav-header">SUTASZ</a>
+                          <ul class="uk-nav-sub">
+                              <li><a href="#">Chiński</a></li>
+                              <li><a href="#">PEGA</a></li>
+                          </ul>
+                      </li>
+                  </li>
+               <!-------------------------------------------------------->
+                  <li class="uk-nav-divider uk-margin"></li>
+                  <li class="uk-parent">
+                      <a href="#" class="uk-nav-header uk-margin-small-left">OPAKOWANIA</a>
+                      <ul class="uk-nav-sub">
+                          <li><a href="#">Przechowywanie</a></li>
+                          <li><a href="#">Prezentowe</a></li>
+                          <li><a href="#">Pocztowe</a></li>
+                          <li><a href="#">Woreczki</a></li>
+                      </ul>
+                  </li>
+               <!-------------------------------------------------------->
+                  <li class="uk-nav-divider uk-margin"></li>
+                  <li class="uk-parent">
+                      <a href="#" class="uk-nav-header">NARZĘDZIA</a>
+                      <ul class="uk-nav-sub">
+                          <li><a href="#">Igły</a></li>
+                          <li><a href="#">Kleje</a></li>
+                          <li><a href="#">Krosna</a></li>
+                          <li><a href="#">Maty</a></li>
+                          <li><a href="#">Lutowanie</a></li>
+                      </ul>
+                  </li>
+              </ul>
+           </div><!---->
+          </div>
+        </aside>
+      <!--ABOUT-->  
+        <section class="uk-width-4-5@m uk-margin-medium uk-text-center">
+            <div class="uk-child-width-1-1@s" uk-grid>
+                <h1>Strona w budowie</h1>
+                <p><img src="img/roboty.jpg" alt="roboty" style="width: 40vw;"/></p>
+            </div>
+        </section>
+
+      </div>
+    </main> 
+   <!--FOOTER-->  
+    <footer>
+      <div id="about" class="uk-child-width-1-3@m uk-margin uk-padding" uk-grid>
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+            <li class="parent-s"> <!--uk-parent-->
+            <a class="h4li" href="#">O FIRMIE</a>
+                <ul class="sub-s"> <!--uk-nav-sub-->
+                    <li><a href="onas.html">O nas</a></li>
+                    <li><a href="konsument.html">Informacje dla Konsumenta</a></li>
+                    <li><a href="certyfikat.html">Certyfikat</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+            <li class="parent-s">
+            <a class="h4li" href="">GWARANCJA I ZWROTY</a>
+                <ul class="sub-s">
+                    <li><a href="regulamin.html">Regulamin</a></li>
+                    <li><a href="prywatnosc.html">Polityka prywatności</a></li>
+                    <li><a href="zwroty.html">Zwroty i reklamacje</a></li>
+                    <li><a href="rabaty.html">Rabaty</a></li>
+                    <li><a href="dostawa.html">Koszty dostawy</a></li>
+                    <li><a href="platnosc.html">Sposoby płatności</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+            <li class="parent-s">
+            <a class="h4li" href="#">MOJE KONTO</a>
+                <ul class="sub-s">
+                    <li><a href="#">Twoje zamówienia</a></li>
+                    <li><a href="#">Ustawienia konta</a></li>
+                    <li><a href="#">Przechowalnia</a></li>
+                    <li><a href="#">Formularz kontaktowy</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    </footer>
+   <!--RIGHTS-->  
+    <div id="rights">
+      <p>
+        <img src="img/logo.svg" alt="logo" class="img-responsive reveal-inline-block pb-1" width="20"/>
+        Ametyst&copy;. 2021. All right reserved.
+      </p>
+    </div>
+  </body>
+</html>

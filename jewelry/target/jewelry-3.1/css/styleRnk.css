@@ -1,0 +1,51 @@
+main{ 
+    width: 98vw !important;
+    min-height: 95vh; 
+    margin-top: 0.3rem;
+}
+#menuRnk{ 
+    position:fixed; 
+    background-color: #9e9d9d23; 
+    padding: 2rem;
+    height: 85%;
+}
+aside{ 
+    background-color: #9e9d9d00 !important; 
+    padding: 0.5rem !important;
+    padding-top: 2rem !important;
+}
+.uk-inline a, .uk-inline a:link,.uk-inline a:active{ color: #361251; text-decoration: none;}
+.uk-inline a:hover{  color: #7628b3; text-decoration: none;}
+/*----SECTION-----*/
+section h2{text-align: center; margin-bottom: 1em;}
+.uk-card-title{font-size: 1.1em; margin: 0;}
+.uk-card-body{padding: 15px;}
+.uk-grid{margin-right: 0;}
+section a:hover{ text-decoration: none;}
+section a:hover p{ color: black; font-weight: bold;}
+section a:link p, section a:active p{ color: black;}
+section a:visited p{ color: #361251;}
+section p{ margin: 0.1rem;}
+section td .uk-input{width: 5vw; padding: 0 12px 0 0;}
+
+.uk-tab{ justify-content: center;}
+.uk-tab > .uk-active > a{border-color: #361251;}
+.uk-table th{text-align: left;}
+.uk-table tbody tr:hover{background-color: #bc94d31e;}
+.uk-flex-right{justify-content: flex-end;}
+hr{border-top: 1px solid #4242467a;}
+.uk-table a{color: #361251;}
+
+.uk-modal-body{
+    background-color: #e3dcdd;
+    width: 75vw;
+}
+
+#products{ width: 80%; margin-left: 10%;}
+
+.uk-input, .uk-select:not([multiple]):not([size]),
+.uk-input:disabled, .uk-select:disabled, .uk-textarea:disabled{
+    color: black;
+}
+
+

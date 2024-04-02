@@ -1,0 +1,26 @@
+/*----SECTION-----*/
+section h2{text-align: center; margin-bottom: 1em; color: #361251;}
+.uk-card-title{font-size: 1.1em; margin: 0;}
+.uk-card-body{padding: 15px;}
+.uk-grid{margin-right: 0;}
+section a:hover{ text-decoration: none;}
+section a:hover p{ color: black; font-weight: bold;}
+section a:link p, section a:active p{ color: black;}
+section a:visited p{ color: #361251;}
+section p{ margin: 0.1rem;}
+
+section img{
+    border: 0.2em solid #bc94d359;
+    opacity:0.9;
+}
+
+section .uk-accordion-title{background-color: #bc94d328; border: 0.3em solid #bc94d315; padding: 0.5em;}
+section .uk-accordion-content{ text-align: center;}
+
+
+.uk-table th{text-align: center;}
+.uk-table a{color: #361251;}
+.uk-table tbody tr:hover{background-color: #bc94d31e;}
+.uk-flex-right{justify-content: flex-end;}
+
+hr{border-top: 1px solid #42424641;}
